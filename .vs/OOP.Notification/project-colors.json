@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8aeb6e75-91e3-466f-a43f-13e860bf7aa1": {
+      "ProjectGuid": "8aeb6e75-91e3-466f-a43f-13e860bf7aa1",
+      "DisplayName": "OOP.Notification",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

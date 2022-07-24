@@ -3,7 +3,7 @@ namespace OOP.Notification
 {
     public interface IMessageService
     {
-        void Send(string to, string message, List<NotificationType> notificationTypes);
+        void Send(string to, string message, Provider provider);
     }
 }
 

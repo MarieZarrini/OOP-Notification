@@ -1,0 +1,15 @@
+F:\Projects\OOP-Notification\bin\Debug\net6.0\OOP.Notification.exe
+F:\Projects\OOP-Notification\bin\Debug\net6.0\OOP.Notification.deps.json
+F:\Projects\OOP-Notification\bin\Debug\net6.0\OOP.Notification.runtimeconfig.json
+F:\Projects\OOP-Notification\bin\Debug\net6.0\OOP.Notification.dll
+F:\Projects\OOP-Notification\bin\Debug\net6.0\ref\OOP.Notification.dll
+F:\Projects\OOP-Notification\bin\Debug\net6.0\OOP.Notification.pdb
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.csproj.AssemblyReference.cache
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.AssemblyInfoInputs.cache
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.AssemblyInfo.cs
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.csproj.CoreCompileInputs.cache
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.dll
+F:\Projects\OOP-Notification\obj\Debug\net6.0\ref\OOP.Notification.dll
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.pdb
+F:\Projects\OOP-Notification\obj\Debug\net6.0\OOP.Notification.genruntimeconfig.cache

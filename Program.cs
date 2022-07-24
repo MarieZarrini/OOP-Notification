@@ -1,59 +1,18 @@
 ﻿using OOP.Notification;
 
-var messageService = new MessageService();
+var phoneNumbers = new List<string>() { "1", "2", "3", "4", "5", "6" };
+var message = "Hello World";
 
-var phoneNumbers = new List<string>() { "912123", "933123", "930123", "915345" };
+var faraPayamak = new Provider { Name = ProviderName.Farapayamak, Disable = false };
+var rahyab = new Provider { Name = ProviderName.Rahyab, Disable = false };
 
-var message = "hello world";
+var providers = new List<Provider>() { faraPayamak, rahyab };
 
-var notificationTypes = new List<NotificationType>() { NotificationType.Farapayamak, NotificationType.Rahyab };
 
-//TODO:For fatemeh
-var x = ((phoneNumbers.Count() * 50) / 100);
 
-var lastProvider = NotificationType.Rahyab;
+var providerService = new ProvidersService(phoneNumbers);
 
-var lastPhoneNumbers = new List<string>();
+providerService.SetProviderCapacity(faraPayamak, 60);
+providerService.SetProviderCapacity(rahyab, 40);
 
-//TODO:For masoud :D
-foreach (var item in notificationTypes)
-{
-    var currentProvider = GetProvider(item);
-
-    foreach (var p in phoneNumbers.Take(x))
-    {
-        lastPhoneNumbers.Add(p);
-        messageService.Send(p, message, new List<NotificationType>() { currentProvider });
-    }
-    lastProvider = currentProvider;
-
-    //TODO:For marie
-    foreach (var p2 in phoneNumbers.Except(lastPhoneNumbers))
-    {
-        //TODO:For marie
-        var currentProvider2 = GetProvider(lastProvider);
-        messageService.Send(p2, message, new List<NotificationType>() { currentProvider2 });
-    }
-
-    break;
-}
-
-Console.ReadKey();
-
-static NotificationType GetProvider(NotificationType notificationType)
-{
-    switch (notificationType)
-    {
-        case NotificationType.Rahyab:
-            {
-                return NotificationType.Farapayamak;
-            }
-        case NotificationType.Farapayamak:
-            {
-                return NotificationType.Rahyab;
-            }
-        default:
-            return NotificationType.Rahyab;
-
-    }
-}
+providerService.SendMessage(providers, message);
