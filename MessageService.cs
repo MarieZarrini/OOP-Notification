@@ -11,7 +11,8 @@ namespace OOP.Notification
         }
         public void Send(string to, string message, List<NotificationType> notificationTypes)
         {
-            foreach (var provider in _notificationProviders)
+            var providers = _notificationProviders.Where(np => notificationTypes.Contains(np.GetNotificationType()));
+            foreach (var provider in providers)
             {
                 provider.Send(to, message);
             }
